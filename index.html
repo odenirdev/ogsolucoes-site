@@ -216,7 +216,7 @@
 
     #vanta-bg img {
       width: 100%;
-      max-width: 800px;
+      max-width: 650px;
       height: auto;
       z-index: 2;
       position: relative;
@@ -242,6 +242,8 @@
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
       z-index: 3;
       max-width: 360px;
+      max-height: 180px;
+      overflow-y: auto;
       font-family: 'Arial', sans-serif;
       font-size: 16px;
       color: #1f2937;
@@ -250,6 +252,8 @@
       animation: chatAppear 1s ease-out 1s both;
       text-align: center;
       position: relative;
+      scrollbar-width: thin;
+      scrollbar-color: #3b82f6 #e5e7eb;
     }
 
     .chat-balloon::before {
@@ -333,12 +337,12 @@
       }
 
       #vanta-bg img {
-        max-width: 85vw;
+        max-width: 70vw;
         width: 100%;
       }
 
       .chat-balloon {
-        max-width: 280px;
+        max-width: 320px;
         font-size: 14px;
         padding: 18px 22px;
       }
@@ -405,7 +409,7 @@
       }
 
       #vanta-bg img {
-        max-width: 80vw;
+        max-width: 65vw;
       }
 
       .chat-balloon {
@@ -535,13 +539,13 @@
 
     // Array de frases sobre a empresa
     const frases = [
-      "💡 Transformamos suas ideias em soluções digitais inovadoras e personalizadas!",
-      "🚀 Impulsionamos seu negócio com tecnologia de ponta e criatividade!",
-      "⚡ Desenvolvemos sistemas web que superam expectativas e geram resultados!",
-      "🎯 Soluções sob medida para cada desafio do seu projeto!",
+      "💡 Soluções sob medida para transformar desafios em oportunidades!",
+      "🎯  Transformando ideias em realidade digital!",
+      "🚀 Impulsione seu negócio com tecnologia de ponta e criatividade!",
+      "⚡ Soluções que superam expectativas e geram resultados!",
       "🌟 Inovação, qualidade e excelência em cada linha de código!",
-      "💻 Criamos experiências digitais que conectam e engajam usuários!",
-      "🔧 Especialistas em transformar complexidade em simplicidade!",
+      "💻 Experiências digitais que conectam e engajam usuários!",
+      "🔧 Especialistas em transformar complexidade em assertividade!",
       "📱 Do conceito ao produto final: sua visão, nossa expertise!"
     ];
 
@@ -549,8 +553,8 @@
     const mensagensSecoes = {
       sobre: "🏢 Somos especialistas em desenvolvimento de software com mais de 10 anos de experiência no mercado!",
       servicos: "⚙️ Oferecemos sistemas web, aplicativos mobile, e-commerce e soluções personalizadas para seu negócio!",
-      empresa: "📋 ODENIR GOMES SOLUÇÕES - CNPJ: 54.705.657/0001-83 | Transformando ideias em realidade digital!",
-      noticias: "📰 Fique por dentro das últimas tendências em tecnologia e inovações do mercado digital!",
+      empresa: "🏢 Somos uma empresa de tecnologia especializada em desenvolver softwares sob medida, como aplicativos e sistemas web, para ajudar empresas de todos os portes a crescer.\n\n\nNossa missão é criar soluções inovadoras e personalizadas que simplificam desafios e geram resultados reais. Trabalhamos com agilidade, eficiência e qualidade, usando as tecnologias mais modernas para entregar sistemas que conectam pessoas, processos e negócios.",
+      noticias: "📰 Fique por dentro das últimas tendências em tecnologia e inovação do mercado",
       contato: "📞 Entre em contato conosco! 📧 Email: odenirdev@gmail.com | 📱 Telefone: +55 (11) 9 4135-4783"
     };
 
